@@ -20,6 +20,8 @@ class StartingPageView(ListView):
     context_object_name = 'posts'
 
     def get_queryset(self):
+        
+
         query_set =  super().get_queryset()
         data = query_set[:3]
         return data
@@ -110,3 +112,12 @@ class ReadLaterView(View):
         request.session["stored_posts"] = stored_posts
         
         return HttpResponseRedirect("/")
+
+def search_blogs(request):
+        if 'q' in request.GET:
+            q=request.GET['q']
+            posts = Post.objects.filter(title__icontains=q)
+        else:
+            posts = Post.objects.all()
+        
+        return render(request, 'myapp/index.html', {"posts":posts})

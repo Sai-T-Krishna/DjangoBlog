@@ -49,3 +49,60 @@ h3 {
 #main-navigation h1 a:active {
   color: #cf79f1;
 }
+#main-navigation .search-container {
+  float: right;
+  
+}
+
+#main-navigation .search-container .search-form{
+  border-radius: 12px;
+}
+
+#main-navigation input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+
+#main-navigation .search-container button {
+  
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#main-navigation .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) 
+{
+  #main-navigation .search-container {
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+  #main-navigation a, #main-navigation input[type=text] {
+    float: none;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+  }
+  #main-navigation .search-container button{
+
+  }
+  #main-navigation input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}

@@ -14,7 +14,16 @@
     
     <header id="main-navigation">
         <h1><a href="{% url 'starting-page' %}">Sai' Blog</a></h1>
+
+        <div class="search-container">
+            <form action="{% url 'search_blogs' %}" class="search-form" method="get">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          
         <nav>
+            
             <a href="{% url 'read-later' %}">Stored Posts</a>
             <a href="{% url 'posts-page' %}">All Posts</a>
         </nav>
@@ -22,5 +31,7 @@
     {% block content %}
     
     {% endblock %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>
