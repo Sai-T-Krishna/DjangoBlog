@@ -115,7 +115,7 @@ class ReadLaterView(View):
 
 def search_blogs(request):
         if 'q' in request.GET:
-            q=request.GET['q']
+            q = request.GET['q']
             posts = Post.objects.filter(title__icontains=q)
         else:
             posts = Post.objects.all()
