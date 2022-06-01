@@ -208,3 +208,60 @@ body {
   #comments h2 {
     color: #464646;
   }
+
+  @media screen and (max-width: 600px) {
+    #summary h2 {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+    #summary #tags{
+      margin-top: 1rem;
+    }
+  
+    #summary address{
+      font-weight: bold;
+    }
+  
+    #summary a{
+      color: #e7e7e7;
+      text-decoration: none;
+    }
+    
+    #summary article {
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-align: right;
+      color: white;
+    }
+    
+    #summary article img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 12px;
+      transform: rotateZ(5deg);
+      border: 5px solid white;
+      margin-top: 6rem;
+      
+    }
+    
+    #summary address {
+      font-weight: bold;
+    }
+    
+    #summary time {
+      font-weight: bold;
+    } 
+  
+    #read-later{
+      margin: 2rem 0;
+    }
+    #read-later button{
+      font-size: 11px;
+    }
+  
+    
+  }

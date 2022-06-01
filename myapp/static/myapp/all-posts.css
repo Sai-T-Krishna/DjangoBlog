@@ -8,7 +8,8 @@ body {
   }
   
   #all-posts {
-    margin: 7rem auto;
+
+    margin: 8rem auto;
     width: 90%;
     max-width: 60rem;
   }
@@ -41,3 +42,6 @@ body {
     border-radius: 12px;
     background-color: white;
   }
+
+  
+  

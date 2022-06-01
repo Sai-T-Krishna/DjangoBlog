@@ -22,7 +22,7 @@ h3 {
 
 #main-navigation {
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +30,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 #main-navigation a {
@@ -59,6 +60,7 @@ h3 {
 }
 
 #main-navigation input[type=text] {
+  border-radius: 15px;
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
@@ -67,11 +69,12 @@ h3 {
 
 
 #main-navigation .search-container button {
-  
+  border-radius: 50%;
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
+  margin-left: 5px;
   background: #ddd;
   font-size: 17px;
   border: none;
@@ -84,9 +87,17 @@ h3 {
 
 @media screen and (max-width: 600px) 
 {
+  #main-navigation{
+   
+    border: none;
+  }
+  #main-navigation .search-container input[type=text]{
+    font-size: 15px;
+  }
   #main-navigation .search-container {
     margin-top: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
+    
   }
   #main-navigation a, #main-navigation input[type=text] {
     float: none;
@@ -95,11 +106,12 @@ h3 {
     width: 100%;
     margin: 0;
     padding: 5px;
-    border-radius: 12px;
+    border-radius: 15px;
     outline: none;
     border: none;
   }
-  #main-navigation .search-container button{
+  #main-navigation .search-container .search-form button{
+    visibility: hidden;
 
   }
   #main-navigation input[type=text] {
