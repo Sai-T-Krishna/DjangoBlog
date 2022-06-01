@@ -65,6 +65,8 @@ h3 {
   margin-top: 8px;
   font-size: 17px;
   border: none;
+  outline: none;
+  text-decoration: none;
 }
 
 
@@ -81,15 +83,16 @@ h3 {
   cursor: pointer;
 }
 
-#main-navigation .search-container button:hover {
-  background: #ccc;
+#main-navigation .search-container .search-form button:hover {
+  background: #400d83;
+  color: white;
 }
 
 @media screen and (max-width: 600px) 
 {
   #main-navigation{
-   
-    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    
   }
   #main-navigation .search-container input[type=text]{
     font-size: 15px;
