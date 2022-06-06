@@ -12,7 +12,7 @@ https://djangoblog07.pythonanywhere.com/
 Clone the project
 
 ```bash
-  git clone https://github.com/Saikrishna121-T/Todo-app.git
+  git clone https://github.com/Saikrishna121-T/DjangoBlog.git
 ```
 
 Go to the project directory
