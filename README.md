@@ -1,10 +1,10 @@
 # DjangoBlog
 A Simple Blog application built with Python and Django. Visitors can leave their comments under each blog topic
 
-Technologies
+# Technologies
 Python, Django, Html, Css
 
-Demo
+# Demo
 https://djangoblog07.pythonanywhere.com/
 
 Run Locally
