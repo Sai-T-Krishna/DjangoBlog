@@ -1,6 +1,9 @@
 # DjangoBlog
 A Simple Blog application built with Python and Django. Visitors can leave their comments under each blog topic
 
+![blog](https://user-images.githubusercontent.com/75980447/172172865-928c949a-7d73-4789-aa7d-ff415f787cd4.png)
+
+
 # Technologies
 Python, Django, Html, Css
 
